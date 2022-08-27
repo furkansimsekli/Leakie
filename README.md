@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo/leakie-logo.jpg" style="border: 3px cyan solid; border-radius:50%;" width="200">
+  <img src="assets/logo/leakie-logo.png" width="200">
 </p>
 
 ## Leakie
