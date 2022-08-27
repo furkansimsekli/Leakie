@@ -1,0 +1,5 @@
+API_KEY = ''
+DB_STRING = ''
+WEBHOOK_URL = ''
+
+PROXY_LIST = []

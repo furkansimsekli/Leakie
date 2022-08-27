@@ -1,0 +1,4 @@
+dnspython==2.2.1
+pymongo==4.2.0
+python_telegram_bot==13.13
+tpblite==0.8.0
