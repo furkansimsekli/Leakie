@@ -8,8 +8,14 @@ def search(query):
     for proxy in config.PROXY_LIST:
         try:
             torrents = TPB(proxy).search(query)
-            if torrents:
-                return torrents
+            valid_torrents = []
+
+            for torrent in torrents:
+                if torrent.seeds > 50:
+                    valid_torrents.append(torrent)
+
+            if valid_torrents:
+                return valid_torrents
 
         except ConnectionError:
             logger.info(f"Connection Error - {proxy}")
