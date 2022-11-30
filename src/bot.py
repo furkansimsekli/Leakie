@@ -1,4 +1,3 @@
-import os
 import datetime
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, ConversationHandler, Filters
@@ -10,7 +9,6 @@ import task
 
 def main():
     TOKEN = config.API_KEY
-    PORT = int(os.environ.get('PORT', '8443'))
     updater = Updater(TOKEN)
     dispatcher = updater.dispatcher
 
@@ -28,10 +26,7 @@ def main():
 
     updater.job_queue.run_repeating(task.control_leaking, interval=3600, first=10)
 
-    updater.start_webhook(listen="0.0.0.0",
-                          port=int(PORT),
-                          url_path=TOKEN,
-                          webhook_url=config.WEBHOOK_URL)
+    updater.start_polling()
     updater.idle()
 
 
