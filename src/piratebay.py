@@ -1,7 +1,7 @@
 from tpblite import TPB
-from logger import logger
-import config
 
+import config
+from logger import logger
 
 
 def search(query):

@@ -1,9 +1,9 @@
 from datetime import datetime
-from pymongo import MongoClient, ReturnDocument
-import dns
-from logger import logger
-import config
 
+from pymongo import MongoClient, ReturnDocument
+
+import config
+from logger import logger
 
 
 def fetch_collection():

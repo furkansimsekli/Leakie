@@ -1,9 +1,9 @@
 import telegram
 from telegram.ext import CallbackContext
-from logger import logger
+
 import mongo
 import piratebay
-
+from logger import logger
 
 
 def control_leaking(context: CallbackContext):

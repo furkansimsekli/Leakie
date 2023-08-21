@@ -1,15 +1,12 @@
-import datetime
-
 from telegram.ext import Updater, CommandHandler, MessageHandler, ConversationHandler, Filters
+
 import config
 import conversation as conv
 import task
 
 
-
 def main():
-    TOKEN = config.API_KEY
-    updater = Updater(TOKEN)
+    updater = Updater(config.API_KEY)
     dispatcher = updater.dispatcher
 
     dispatcher.add_handler(ConversationHandler(
