@@ -3,3 +3,4 @@ pymongo==4.2.0
 python_telegram_bot==13.13
 toml~=0.10.2
 tpblite==0.8.0
+urllib3==1.26.16
